@@ -152,6 +152,13 @@ img {
   background-color: var(--primary-text-color);
   padding-bottom: 188px;
   padding-top: 188px;
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/people-office\ 1.jpg);
+  max-width: 1440px;
+  background-size: cover;
 }
 
 .main-title {
@@ -163,7 +170,6 @@ img {
   color: #ffffff;
   margin-left: auto;
   margin-right: auto;
-  background-color: var(--primary-text-color);
   margin-bottom: 48px;
   width: 496px;
 }
@@ -187,11 +193,7 @@ img {
 .main-btn:focus {
   background-color: var(--active-color);
 }
-/* СЕКЦІЯ НАША ПОЛІТИКА */
-/* .cont-our-policy {
-  padding-top: 120px;
-
-} */
+/* НАША  ПОЛІТИКА */
 .policy-item:not(:last-child) {
   margin-right: 24px;
 }
@@ -214,7 +216,17 @@ img {
 .policy-item {
   width: 264px;
 }
-
+.policy-icons {
+  width: 264px;
+  height: 112px;
+  background-color: #f4f4fd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 8px;
+}
+.policy-icon {
+}
 /* СЕКЦІЯ КАРТИНОК, ЩО МИ РОБИМО */
 .our-work {
   /* padding-top: 120px; */
@@ -273,6 +285,7 @@ img {
   text-align: center;
   letter-spacing: 0.02em;
   margin-top: 8px;
+  margin-bottom: 8px;
 }
 .team-list {
   display: flex;
@@ -283,8 +296,87 @@ img {
   margin-left: auto;
   margin-right: auto;
 }
+.social-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+.social-item {
+  width: 40px;
+  height: 40px;
+}
+.social-link {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  display: inline-block;
+  background-color: var(--button-background);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.social-link:hover,
+.social-link:focus {
+  background-color: var(--active-color);
+}
 
+/* .link-studio {
+  background-color: var(--button-background);
+}
+.link-studio:hover {
+  background-color: var(--active-color);
+} */
+/* ПОКУПЦІ */
+.costumer-list {
+  display: flex;
+  gap: 24px;
+}
+.costumer-item {
+  width: 168px;
+  height: 88px;
+  /* border: 1px solid #8e8f99; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* .costumer-item:hover {
+  border: 1px solid var(--active-color);
+} */
+
+.costumer-link {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #8e8f99;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.costumer-link:hover,
+.costumer-link:focus {
+  /* background-color: #2196f3; */
+  border: 1px solid var(--active-color);
+}
+.costumer-icon {
+  width: 104px;
+  height: 56px;
+  fill: #8e8f99;
+}
+.costumer-icon:hover,
+.costumer-icon:focus {
+  fill: var(--active-color);
+}
+.costumers {
+  margin-bottom: 72px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: var(--primary-text-color);
+}
 /* MAIN PORTFOLIO */
+
 /* КНОПКИ */
 .butums {
   display: flex;
@@ -319,6 +411,8 @@ img {
   cursor: pointer;
   border: 1px solid transparent;
   border-radius: 4px;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 /* Продукти */
@@ -341,6 +435,10 @@ img {
   box-sizing: border-box;
   width: 360px;
   background: #ffffff;
+}
+.border-product:hover {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 .products {
   display: flex;
@@ -377,6 +475,7 @@ img {
   padding-top: 100px;
   padding-bottom: 100px;
   background-color: var(--primary-text-color);
+  display: flex;
 }
 .web-footer {
   color: #f4f4fd;
@@ -392,4 +491,30 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--button-background);
+}
+.cont-footer {
+  display: flex;
+}
+.media-footer-container {
+  margin-left: 120px;
+  align-items: center;
+}
+.footer-social-list {
+  display: flex;
+  gap: 16px;
+}
+.footer-media {
+  margin-bottom: 16px;
+  font-family: Roboto;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 2%;
+  color: #f4f4fd;
+}
+
+.link-footer {
+  background-color: var(--button-background);
+}
+.link-footer:hover {
+  background-color: #31d0aa;
 }
