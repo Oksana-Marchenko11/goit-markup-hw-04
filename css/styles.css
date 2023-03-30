@@ -436,7 +436,8 @@ img {
   width: 360px;
   background: #ffffff;
 }
-.border-product:hover {
+.border-product:hover,
+.border-product:focus {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
@@ -515,6 +516,7 @@ img {
 .link-footer {
   background-color: var(--button-background);
 }
-.link-footer:hover {
+.link-footer:hover,
+.link-footer:focus {
   background-color: #31d0aa;
 }
