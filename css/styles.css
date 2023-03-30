@@ -184,6 +184,7 @@ img {
   cursor: pointer;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  border-color: transparent;
   padding: 16px 32px;
   display: block;
   margin-left: auto;
@@ -203,6 +204,7 @@ img {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
+  margin-bottom: 8px;
 }
 .descr-our-policy {
   font-size: 16px;
@@ -292,7 +294,6 @@ img {
   justify-content: center;
   margin-top: 72px;
   column-gap: 24px;
-  width: 264px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -320,12 +321,6 @@ img {
   background-color: var(--active-color);
 }
 
-/* .link-studio {
-  background-color: var(--button-background);
-}
-.link-studio:hover {
-  background-color: var(--active-color);
-} */
 /* ПОКУПЦІ */
 .costumer-list {
   display: flex;
@@ -334,15 +329,16 @@ img {
 .costumer-item {
   width: 168px;
   height: 88px;
-  /* border: 1px solid #8e8f99; */
+  /* border: 1px solid #8e8f99 */
   display: flex;
   justify-content: center;
   align-items: center;
 }
-/* .costumer-item:hover {
+/* .costumer-item:hover,
+.costumer-item:focus {
   border: 1px solid var(--active-color);
+  fill: var(--active-color);
 } */
-
 .costumer-link {
   width: 100%;
   height: 100%;
@@ -353,8 +349,8 @@ img {
 }
 .costumer-link:hover,
 .costumer-link:focus {
-  /* background-color: #2196f3; */
   border: 1px solid var(--active-color);
+  fill: var(--active-color);
 }
 .costumer-icon {
   width: 104px;
@@ -423,7 +419,7 @@ img {
   border-left: 1px solid #e7e9fc;
   border-right: 1px solid #e7e9fc;
   border-bottom: 1px solid #e7e9fc;
-  width: 360px;
+  /* width: 360px; */
 }
 .cont-products {
   margin-top: 72px;
@@ -432,7 +428,6 @@ img {
   width: 360px;
 }
 .border-product {
-  box-sizing: border-box;
   width: 360px;
   background: #ffffff;
 }
@@ -487,8 +482,6 @@ img {
   font-weight: 800;
   font-size: 18px;
   line-height: 1.17;
-  display: flex;
-  align-items: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--button-background);
