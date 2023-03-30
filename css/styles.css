@@ -346,16 +346,17 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
+  color: #8e8f99;
 }
 .costumer-link:hover,
 .costumer-link:focus {
   border: 1px solid var(--active-color);
-  fill: var(--active-color);
+  color: var(--active-color);
 }
 .costumer-icon {
   width: 104px;
   height: 56px;
-  fill: #8e8f99;
+  fill: currentColor;
 }
 .costumer-icon:hover,
 .costumer-icon:focus {
